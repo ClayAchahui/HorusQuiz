@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             x:Class="Horus.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Regular">
+                <On Platform="Android" Value="fa-regular-400.ttf#Font Awesome 5 Free Regular"/>
+                <On Platform="iOS" Value="Font Awesome 5 Free Regular"/>
+            </OnPlatform>
+            <Style x:Key="labelRegular" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource Regular}"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>
